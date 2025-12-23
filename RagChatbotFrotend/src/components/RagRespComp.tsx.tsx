@@ -19,10 +19,9 @@ export const RagRespComp: React.FC = () => {
   const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
   const [, setIsStreaming] = useState(false)
-  const [error, setError] = useState<string | null>(null);
+  const [, setError] = useState<string | null>(null);
 
 
-  const chatContainerRef = useRef<HTMLDivElement>(null);
   const chatEndRef = useRef<HTMLDivElement>(null);
   const isFirstLoad = useRef(true)
 
