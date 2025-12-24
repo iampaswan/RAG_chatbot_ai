@@ -32,11 +32,12 @@ const FilesUploading: React.FC = () => {
 
   return <>
 
-    <div className="flex items-center gap-2">
+    <div className="flex flex-wrap sm:flex-nowrap items-center gap-2 max-w-full">
+
       <input
-        className="border rounded-full p-2"
+        className="border rounded-full p-2 w-32"
         type="file" onChange={handleFileChange} />
-      <button onClick={handleFile} className=" text-white bg-blue-500 rounded-full hover:bg-black p-3">
+      <button onClick={handleFile} className=" text-white bg-blue-500 rounded-full hover:bg-black p-3 w-32">
         <strong>Upload File</strong>
       </button>
     </div>

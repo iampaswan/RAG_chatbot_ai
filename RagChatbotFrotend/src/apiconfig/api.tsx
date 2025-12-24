@@ -6,10 +6,6 @@ export const getRagResponse = (question: string) => {
   return axios.post(`${url}`, { question });
 }
 
-export const clearChats = () => {
-  return axios.post(`${url}/clearChats`);
-}
-
 export const getChats = () => {
   return axios.get(`${url}/chatHistory`);
 }

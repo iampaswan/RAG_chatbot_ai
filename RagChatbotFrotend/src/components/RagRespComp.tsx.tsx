@@ -148,18 +148,15 @@ export const RagRespComp: React.FC = () => {
 
 
   return <>
-    <div className="flex flex-col h-screen  p-4  border bg-amber-100">
-      <div className="flex items-center justify-between mb-4 border-b-1  p-2">
-        <div className="text-3xl"><strong>RAG Chatbot</strong></div>
-        <div> <FilesUploading /></div>
+    <div className="flex flex-col min-w-[360px] h-[100dvh] p-2 sm:p-4 border bg-amber-50">
+
+      <div className="flex items-center flex-wrap justify-between mb-3 sm:mb-4 border-b p-2">
+        <div className="text-xl sm:text-3xl font-bold">RAG Chatbot</div>
+        <div><FilesUploading /></div>
       </div>
 
 
-
-
-
-
-      <div className="flex-1 overflow-y-auto px-6 py-4 space-y-4 ">
+      <div className="flex-1 overflow-y-auto px-4 py-4 space-y-4 ">
         {messages.map((msg, idx) => {
           if (msg.sender === "assistant" && !msg.text.trim()) return null;
 
@@ -169,7 +166,7 @@ export const RagRespComp: React.FC = () => {
               className={`flex ${msg.sender === "user" ? "justify-end" : "justify-start"}`}
             >
               <div
-                className={`max-w-[50%] p-3 rounded-2xl text-sm whitespace-pre-wrap ${msg.sender === "user"
+                className={`max-w-[75%] p-3 rounded-2xl text-sm whitespace-pre-wrap ${msg.sender === "user"
                   ? "bg-blue-600 text-white rounded-br-none"
                   : "bg-gray-950 text-white rounded-bl-none"
                   }`}
@@ -193,8 +190,7 @@ export const RagRespComp: React.FC = () => {
       </div>
 
 
-
-      <div className="flex flex-row justify-between fixed-absolute bottom-0 left-0 w-full gap-2 border-t-2 p-2">
+      <div className="flex flex-wrap justify-between fixed-absolute bottom-0 left-0 w-full gap-2 border-t-2 p-2">
 
         <input
           type="text"
@@ -211,17 +207,11 @@ export const RagRespComp: React.FC = () => {
         <button
           onClick={handleAsk}
           disabled={loading}
-          className={`w-1/12 p-2 text-white bg-blue-500 rounded-full hover:bg-black ${loading ? "bg-blue-300 cursor-not-allowed" : "bg-blue-600 hover:bg-black"
+          className={`w-32 p-2 text-white bg-blue-500 rounded-full hover:bg-black ${loading ? "bg-blue-300 cursor-not-allowed" : "bg-blue-600 hover:bg-black"
             }`}
         >
           <strong>{loading ? "..." : "Ask"} </strong>
         </button>
-
-        <button
-          className="w-1/12 p-2 text-white bg-blue-600 rounded-full hover:bg-black">
-          <strong>Clear Chats</strong>
-        </button>
-
       </div>
 
     </div >
