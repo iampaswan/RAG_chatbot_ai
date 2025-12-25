@@ -148,9 +148,9 @@ export const RagRespComp: React.FC = () => {
 
 
   return <>
-    <div className="flex flex-col min-w-[360px] h-[100dvh] p-2 sm:p-4 border bg-amber-50">
+    <div className="flex flex-col min-w-[420px] h-[100dvh] p-2 sm:p-4 border bg-amber-50">
 
-      <div className="flex items-center flex-wrap justify-between mb-3 sm:mb-4 border-b p-2">
+      <div className="flex items-center flex-wrap justify-between mb-3 sm:mb-4 border-b p-1">
         <div className="text-xl sm:text-3xl font-bold">RAG Chatbot</div>
         <div><FilesUploading /></div>
       </div>
