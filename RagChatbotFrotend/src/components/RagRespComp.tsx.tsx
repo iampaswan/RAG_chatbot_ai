@@ -148,7 +148,7 @@ export const RagRespComp: React.FC = () => {
 
 
   return <>
-    <div className="flex flex-col min-w-[420px] h-[100dvh] p-2 sm:p-4 border bg-amber-50">
+    <div className="flex flex-col min-w-[360px] h-[100dvh] p-2 sm:p-4  bg-amber-50">
 
       <div className="flex items-center flex-wrap justify-between mb-3 sm:mb-4 border-b p-1">
         <div className="text-xl sm:text-3xl font-bold">RAG Chatbot</div>
@@ -166,7 +166,7 @@ export const RagRespComp: React.FC = () => {
               className={`flex ${msg.sender === "user" ? "justify-end" : "justify-start"}`}
             >
               <div
-                className={`max-w-[75%] p-3 rounded-2xl text-sm whitespace-pre-wrap ${msg.sender === "user"
+                className={`max-w-[60%] p-3 rounded-2xl text-sm whitespace-pre-wrap ${msg.sender === "user"
                   ? "bg-blue-600 text-white rounded-br-none"
                   : "bg-gray-950 text-white rounded-bl-none"
                   }`}
@@ -207,7 +207,7 @@ export const RagRespComp: React.FC = () => {
         <button
           onClick={handleAsk}
           disabled={loading}
-          className={`w-32 p-2 text-white bg-blue-500 rounded-full hover:bg-black ${loading ? "bg-blue-300 cursor-not-allowed" : "bg-blue-600 hover:bg-black"
+          className={` pl-5 pr-5 text-white bg-blue-500 rounded-full hover:bg-black ${loading ? "bg-blue-300 cursor-not-allowed" : "bg-blue-600 hover:bg-black"
             }`}
         >
           <strong>{loading ? "..." : "Ask"} </strong>
