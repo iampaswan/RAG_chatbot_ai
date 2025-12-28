@@ -35,7 +35,7 @@ const FilesUploading: React.FC = () => {
     <div className="flex flex-wrap sm:flex-nowrap items-center gap-2 max-w-full">
 
       <input
-        className="border rounded-full p-1 w-24"
+        className="border rounded-full p-1 w-23"
         type="file" onChange={handleFileChange} />
       <button onClick={handleFile} className=" text-white bg-blue-500 rounded-full hover:bg-black p-2">
         <strong>Upload File</strong>

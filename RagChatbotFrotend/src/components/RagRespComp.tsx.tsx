@@ -148,9 +148,9 @@ export const RagRespComp: React.FC = () => {
 
 
   return <>
-    <div className="flex flex-col min-w-[360px] h-[100dvh] p-2 sm:p-4  bg-amber-50">
+    <div className="flex flex-col min-w-[360px] h-[100dvh] p-2 sm:p-4  bg-gradient-to-br from-indigo-100 via-amber-100 to-cyan-100">
 
-      <div className="flex items-center flex-wrap justify-between mb-3 sm:mb-4 border-b p-1">
+      <div className="flex items-center flex-wrap justify-between mb-4 sm:mb-4 p-1  "   >
         <div className="text-xl sm:text-3xl font-bold">RAG Chatbot</div>
         <div><FilesUploading /></div>
       </div>
@@ -190,12 +190,12 @@ export const RagRespComp: React.FC = () => {
       </div>
 
 
-      <div className="flex flex-wrap justify-between fixed-absolute bottom-0 left-0 w-full gap-2 border-t-2 p-2">
+      <div className="flex flex-wrap justify-between fixed-absolute bottom-0 left-0 w-full gap-2  p-2  ">
 
         <input
           type="text"
           placeholder="Type your question..."
-          className="flex-1 border p-3 border-black-300 rounded-4xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="flex-1 p-3 bg-white shadow-md rounded-4xl focus:outline-none focus:ring-2 focus:ring-blue-500"
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
           onKeyDown={handleKeyPress}
