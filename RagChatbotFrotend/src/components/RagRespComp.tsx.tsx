@@ -166,7 +166,7 @@ export const RagRespComp: React.FC = () => {
               className={`flex ${msg.sender === "user" ? "justify-end" : "justify-start"}`}
             >
               <div
-                className={`max-w-[60%] p-3 rounded-2xl text-sm whitespace-pre-wrap ${msg.sender === "user"
+                className={`max-w-[55%] p-3 rounded-2xl text-sm whitespace-pre-wrap ${msg.sender === "user"
                   ? "bg-blue-600 text-white rounded-br-none"
                   : "bg-gray-950 text-white rounded-bl-none"
                   }`}
@@ -210,7 +210,7 @@ export const RagRespComp: React.FC = () => {
           className={` pl-5 pr-5 text-white bg-blue-500 rounded-full hover:bg-black ${loading ? "bg-blue-300 cursor-not-allowed" : "bg-blue-600 hover:bg-black"
             }`}
         >
-          <strong>{loading ? "..." : "Ask"} </strong>
+          <strong>{loading ? "..." : "Send"} </strong>
         </button>
       </div>
 
