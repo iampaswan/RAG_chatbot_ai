@@ -1,0 +1,42 @@
+Krishna Kumar Paswan
+Jaipur Rajasthan | krishna1119kumar@gmail.com | 7267044742 | Portfolio | linkedin | github
+Education
+Maulana Azad National Institute of Technology, MANIT Bhopal 2021 – 2025
+• B.Tech in Electrical Engineering
+Sri Raghukul Vidhya Peeth, Gonda UP 2018
+• 10th CBSE, 88.16 Percent
+Sri Raghukul Vidhya Peeth, Gonda UP 2020
+• 12th CBSE, 79.04 Percent
+Experience
+Software Engineer, InfoObjects – Jaipur July 2025 – Present
+• Join as Software Engineer at InfoObjects Inc.
+• Working on Full Stack Development and Generative AI
+• Build RAG and build multi agents using LangChain, LangGraph
+Projects
+CampusCluster
+• Built AI powered learning management system for personalized learning of students.
+• Built an intuitive, responsive UI using React and a secure backend using Node.js
+• Utilized vector databases and embeddings to enable semantic search across course materials.
+• Integrated automated assessment tools including AI-generated quizzes, question paper and instant grading.
+• Use API gateway for singal entry point for all client request to backend.
+RAG Chatbot Live Dashboard
+• Developed a Retrieval-Augmented Generation Chatbot that answers document-based queries.
+• Use Enhanced document search accuracy using semantic embeddings.
+ChatPulse Live Dashboard
+• Built a live chat app supporting two-way communication with authentication and authorization.
+• Achieved less than 200ms for message delivery latency by optimizing WebSocket connections
+Technical Skills
+Languages: C++, JavaScript, TypeScript, Python and SQL
+Frontend: HTML, CSS, React, Redux, Boostrap
+Backend: NodeJs, ExpressJs, NextJs, FastAPI
+Database: MySQL and MongoDB
+AI and ML: LLM , NLP, Fine Tuning and Generative AI
+Tools/Technologies: Git, Github, Docker and Ollama
+Cloud Plateform: AWS and Google Cloud
+Relevant Coursework
+• Data Structure and Aglorithms
+• Machine Learning
+• Operating System
+• Database Management System (DBMS)
+• Computer Network
+• Object Oriented Programming (OOPs)
