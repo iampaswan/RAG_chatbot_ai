@@ -4,7 +4,7 @@ import axios from 'axios';
 const url = import.meta.env.VITE_API_URL;
 
 export const getRagResponse = (question: string) => {
-  return axios.post(`${url}/`, { question });
+  return axios.post(`${url}`, { question });
 }
 
 export const getChats = () => {
