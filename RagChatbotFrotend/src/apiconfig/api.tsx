@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-// const url = 'http://localhost:4000';
 const url = import.meta.env.VITE_API_URL;
 
 export const getRagResponse = (question: string) => {
@@ -11,9 +10,7 @@ export const getChats = () => {
   return axios.get(`${url}/chatHistory`);
 }
 
-// export const uploading = (formData: any) => {
-//   return axios.post(`${url}/upload`, formData);
-// }
+
 
 
 
